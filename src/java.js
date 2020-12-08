@@ -159,10 +159,18 @@ function changeImage () {
   return currentTempToday.innerHTML = currentTempTodayF;
   }
 
+  currentFahrenheit.onclick = function changeColorFar () {
+  document.querySelector("#fahrenheit-link").style.color = "#535353";
+  document.querySelector("#celsius-link").style.color = "#d9adad"; }
+
   currentCelsius.onclick = function showMessage(results) {
   let currentTempToday = document.querySelector("#temp-today");
   currentTempToday.innerHTML = Math.round(result.data.main.temp);
   }
+  currentCelsius.onclick = function changeColorCel () {
+      document.querySelector("#celsius-link").style.color = "#535353";
+      document.querySelector("#fahrenheit-link").style.color = "#d9adad";
+      }
 
 }
 
@@ -181,6 +189,19 @@ function getFar(event) {
 event.preventDefault ();
 return tempToday.innerHTML = tempTodayF;
 }
+
+// Celsius e Fahrenheit link change color if clicked. If clicked Search button or Current they revert to original color
+document.querySelector("#fahrenheit-link").onclick = function changeColorFar () {
+document.querySelector("#fahrenheit-link").style.color = "#535353";
+document.querySelector("#celsius-link").style.color = "#d9adad";
+}
+
+document.querySelector("#celsius-link").onclick = function changeColorCel () {
+document.querySelector("#celsius-link").style.color = "#535353";
+document.querySelector("#fahrenheit-link").style.color = "#d9adad";
+}
+
+
 
 let tempToday = document.querySelector("#temp-today");
 tempToday.innerHTML = 17
@@ -272,13 +293,26 @@ function showMessage(result) {
   currentFahrenheit.onclick = function getCurrentFar() {
   let currentTempToday = document.querySelector("#temp-today");
   let currentTempTodayF = Math.round (((Math.round(result.data.main.temp)) * 9/5) + 32);
-  return currentTempToday.innerHTML = currentTempTodayF;
-  }
+  return currentTempToday.innerHTML = currentTempTodayF; }
+
+  currentFahrenheit.onclick = function changeColorFar () {
+  document.querySelector("#fahrenheit-link").style.color = "#535353";
+  document.querySelector("#celsius-link").style.color = "#d9adad"; }
+ 
 
   currentCelsius.onclick = function showMessage(results) {
   let currentTempToday = document.querySelector("#temp-today");
-  currentTempToday.innerHTML = Math.round(result.data.main.temp);
-  }
+  currentTempToday.innerHTML = Math.round(result.data.main.temp);}
+
+  currentCelsius.onclick = function changeColorCel () {
+      document.querySelector("#celsius-link").style.color = "#535353";
+      document.querySelector("#fahrenheit-link").style.color = "#d9adad";
+      }
+ 
+
+
+
+
 
 }}}
 
