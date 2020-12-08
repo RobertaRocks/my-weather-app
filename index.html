@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Roberta's Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+       <div class="weatherapp">
+
+                
+                  <h1 class="welcome">My weather app</h1>
+                
+                  <form id="search-form">
+
+                    <div class="row search-box" >
+                      <div class="col-5 search"><input type="text"class="form-control" id="search-box" placeholder="Enter City"/></div>
+                      <div class="col-1 search-button"><button type="submit" value="Search" class="btn" id="search-button" >Search</button></div> 
+                      <div class="col-1 search-button-current"><button type="submit" value="Current" class="btn btn-current" id="search-button-current" >Current</button></div>                  
+                    </div> 
+                  </form>
+
+
+                  <div class="row hero">
+
+                            <div class="col-12">
+                                            <h2> <span id="searched-city">Recanati</span><span>, </span><span id="country"></span></h2>
+                                            <h3 id="current-date">Monday 23 November<h3>
+                                            <h4 id="current-weather"> Sunny</h4>           
+                            </div>
+                  </div>
+       
+
+
+
+              <div class="row today-results">
+                    <div class="col-7 image"> <img src="img/Clear.png" class=imgtoday id="drawing"></div>
+                    <div class="col-5 number"> 
+                        <span class="number"id="temp-today">  </span>
+                        <span class="celsiusfar"> 
+                              <a href="#" class= "celsiusfar-a" id="celsius-link" >°C</a> |
+                              <a href="#" class= "celsiusfar" id="fahrenheit-link" >°F</a>
+                        </span>
+                    </div>
+                    <div class="col-12 prec-wind"> 
+                        <ul>
+                        <li><span class="hum-wind">Humidity: </span> <span id="humidity">10</span> %</li>
+                        <li><span class="hum-wind">Wind: </span><span id="wind">1</span> meter/sec</li>
+                        </ul>   
+                    </div>
+              </div>
+
+
+
+              <div class="row weekly-results">
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Tue</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Drizzle.png"class=iconsweather alt="Drizzle"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Drizzly</div>
+                                                        <div class="card-footer bg-transparent border-light">17°</div>
+                                    </div>
+                              </div>
+
+
+
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Wed</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Snow.png"class=iconsweather alt="Snow"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Snowy</div>
+                                                        <div class="card-footer bg-transparent border-light">13°</div>
+                                    </div>
+                              </div>
+
+
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Thu</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Clouds.png"class=iconsweather alt="Cloudy"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Cloudy</div>
+                                                        <div class="card-footer bg-transparent border-light">10°</div>
+                                    </div>
+                              </div>
+
+        
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Fri</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Rain.png"class=iconsweather alt="Rainy"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Rainy</div>
+                                                        <div class="card-footer bg-transparent border-light">7°</div>
+                                    </div>
+                              </div>
+
+
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Sat</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Thunderstorm.png"class=iconsweather alt="Storm"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Stormy</div>
+                                                        <div class="card-footer bg-transparent border-light">3°</div>
+                                    </div>
+                              </div>
+
+                              <div class="col-4 day">
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem">
+                                              <div class="card-header bg-transparent border-light">Sun</div>
+                                                  <div class="card-body text-success">
+                                                    <h5 class="card-title"> <img src="img/Atmosphere.png"class=iconsweather alt="Atmosphere"></h5>
+                                                  </div>
+                                                      <div class="card-footer bg-transparent border-light">Misty</div>
+                                                        <div class="card-footer bg-transparent border-light">3°</div>
+                                    </div>
+                              </div>
+        
+              </div>
+
+
+            <footer>
+              Coded by <a href="https://www.linkedin.com/in/robertafrancesconi/?locale=it_IT" target="_blank"> Roberta Francesconi </a>
+            </footer>
+      
+       </div>
+    </div>
+ <script src="src/java.js"></script>
+  </body>
+</html>
+ 

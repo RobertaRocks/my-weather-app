@@ -1,0 +1,133 @@
+.weatherapp {
+border: 1px solid #e0e0e0;
+padding: 30px;
+margin: 20px auto;
+max-width: 800px;
+border-radius: 20px;}
+
+
+.welcome {
+  margin-top: 10px;
+  color: #838383;
+  font-family: monospace;
+  font-size: 28px;
+  text-align: left;}
+
+.form-control {
+  margin-top: 20px;
+  margin-bottom: 30px;}
+
+.btn {
+  color: #d9adad;
+  background-color: #fccbcb;
+  border: #ad9d9d;
+  color: #535353;
+  margin-right: 800px;
+  margin-top: 20px;}
+
+.btn:hover {
+  background-color: #d9adad;
+  border-color: #fccbcb;
+  color: #ffff;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:focus { outline:none;
+  box-shadow: none;}
+
+.search-button {
+margin-right: 25px;
+}
+.btn-current {
+background-color: #835858;
+color: white;
+margin-left: 25px;
+}
+.heroimg {
+  position: absolute;
+  max-width: 100%;
+  top: -10px;
+  left: 100px;}
+
+h2, h3 {
+  text-align: left;
+  line-height: 30px;}
+
+h4 {
+  color: #d9adad;
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 0;}
+
+
+body {
+  font-family: "Montserrat", sans-serifß;
+  color: #838383;
+  text-align: center;}
+
+
+.imgtoday {
+  max-width: 80%;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  margin-left:-50px;
+}
+
+.number {
+font-size: 80px;
+font-weight: bold;
+text-align: left;
+padding-top: 50px;
+padding-left: -5px;
+margin-left:-30px;
+}
+
+span.celsiusfar {
+font-size: 20px;
+position: relative;
+top: -35px;
+margin-left: -10px;
+}
+
+a.celsiusfar-a {
+font-size: 20px;
+position: relative;
+text-align: top;
+}
+
+ul {
+line-height: 30px;
+font-size: 20px;
+text-align: left;
+list-style: none;
+margin-bottom: 30px;
+padding-left: 0px;
+}
+
+.hum-wind {
+color: #d9adad;
+}
+
+.iconsweather {
+max-width: 100%;}
+
+.today-results {
+margin-bottom: 20px;}
+
+
+footer {
+  font-size: 15px;
+  font-family: monospace;
+  color: #838383;
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 50px;}
+
+a {
+  cursor: pointer;
+  color: #d9adad;
+  text-decoration: none;}
+
+a:hover {
+  text-decoration: none;
+  color: #fccbcb;}
