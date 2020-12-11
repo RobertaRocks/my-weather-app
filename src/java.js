@@ -120,13 +120,28 @@ searchForm.addEventListener("submit", showSearchedOutput);
 
 function getCel (event) {
 event.preventDefault();
-tempToday.innerHTML = 17;
-}
+let cityName = document.querySelector("#searched-city").innerHTML;
+    let apiKey = "b1d85d3727e610039e9f3b93d686021e";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${units}&appid=${apiKey}`;
+    axios.get(apiUrl).then(showMessage);
+function showMessage(result) {
+      let temp = document.querySelector("#temp-today");
+      temp.innerHTML = Math.round(result.data.main.temp);
+}}
 
 function getFar(event) {
 event.preventDefault ();
+let cityName = document.querySelector("#searched-city").innerHTML;
+    let apiKey = "b1d85d3727e610039e9f3b93d686021e";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${units}&appid=${apiKey}`;
+    axios.get(apiUrl).then(showMessage);
+function showMessage(result) {
+      let temp = document.querySelector("#temp-today");
+      temp.innerHTML = Math.round(((result.data.main.temp) * 9/5) + 32);
 return tempToday.innerHTML = tempTodayF;
-}
+}}
 
 // Celsius e Fahrenheit link change color if clicked. 
 // If clicked Search button or Current they revert to original color
@@ -144,8 +159,7 @@ document.querySelector("#fahrenheit-link").style.color = "#d9adad";
 // Make Celsius and Fahrenheit conversion
 
 let tempToday = document.querySelector("#temp-today");
-tempToday.innerHTML = 17
-let tempTodayF = Math.round (tempToday.innerHTML * 9/5) + 32;
+tempToday.innerHTML = null
 
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", getCel);
@@ -275,4 +289,3 @@ function getCurrentPosition (event) {
 
 let currentPositionButton = document.querySelector("#search-button-current");
 currentPositionButton.addEventListener ("click", getCurrentPosition)
-
