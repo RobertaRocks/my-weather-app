@@ -84,25 +84,25 @@ function showMessage(result) {
   currentWeather.innerHTML = (result.data.weather[0].main);
 
   if ( currentWeather.innerHTML === "Clouds") {
-  document.getElementById("drawing").src = "img/Clouds.png";
+  document.getElementById("drawing").src = "img/Clouds.gif";
   }
   else if ( currentWeather.innerHTML === "Rain") {
-  document.getElementById("drawing").src = "img/Rain.png";
+  document.getElementById("drawing").src = "img/Rain.gif";
               }
   else if (currentWeather.innerHTML === "Thunderstorm") {
-  document.getElementById("drawing").src = "img/Thunderstorm.png";
+  document.getElementById("drawing").src = "img/Thunderstorm.gif";
               }
   else if (currentWeather.innerHTML=== "Snow") {
-  document.getElementById("drawing").src = "img/Snow.png";
+  document.getElementById("drawing").src = "img/Snow.gif";
               }
   else if (currentWeather.innerHTML === "Clear") {
-  document.getElementById("drawing").src = "img/Clear.png"
+  document.getElementById("drawing").src = "img/Clear.gif"
               }
   else if (currentWeather.innerHTML === "Drizzle") {
-  document.getElementById("drawing").src = "img/Drizzle.png"
+  document.getElementById("drawing").src = "img/Drizzle.gif"
               }
   else if (currentWeather.innerHTML === "Ash" ||currentWeather.innerHTML === "Dust" || currentWeather.innerHTML === "Fog" || currentWeather.innerHTML === "Haze" || currentWeather.innerHTML === "Mist" || currentWeather.innerHTML === "Sand" || currentWeather.innerHTML === "Smoke" ){
-  document.getElementById("drawing").src = "img/Atmosphere.png"
+  document.getElementById("drawing").src = "img/Atmosphere.gif"
               }
   else {
       document.getElementById("drawing").src = "img/Other.png"
@@ -123,25 +123,25 @@ function changeImage () {
   currentWeather.innerHTML = (result.data.weather[0].main);
 
   if ( currentWeather.innerHTML === "Clouds") {
-  document.getElementById("drawing").src = "img/Clouds.png";
+  document.getElementById("drawing").src = "img/Clouds.gif";
   }
   else if ( currentWeather.innerHTML === "Rain") {
-  document.getElementById("drawing").src = "img/Rain.png";
+  document.getElementById("drawing").src = "img/Rain.gif";
               }
   else if (currentWeather.innerHTML === "Thunderstorm") {
-  document.getElementById("drawing").src = "img/Thunderstorm.png";
+  document.getElementById("drawing").src = "img/Thunderstorm.gif";
               }
   else if (currentWeather.innerHTML=== "Snow") {
-  document.getElementById("drawing").src = "img/Snow.png";
+  document.getElementById("drawing").src = "img/Snow.gif";
               }
   else if (currentWeather.innerHTML === "Clear") {
-  document.getElementById("drawing").src = "img/Clear.png"
+  document.getElementById("drawing").src = "img/Clear.gif"
               }
   else if (currentWeather.innerHTML === "Drizzle") {
-  document.getElementById("drawing").src = "img/Drizzle.png"
+  document.getElementById("drawing").src = "img/Drizzle.gif"
               }
   else if (currentWeather.innerHTML === "Ash" ||currentWeather.innerHTML === "Dust" || currentWeather.innerHTML === "Fog" || currentWeather.innerHTML === "Haze" || currentWeather.innerHTML === "Mist" || currentWeather.innerHTML === "Sand" || currentWeather.innerHTML === "Smoke" ){
-  document.getElementById("drawing").src = "img/Atmosphere.png"
+  document.getElementById("drawing").src = "img/Atmosphere.gif"
               }
   else {
       document.getElementById("drawing").src = "img/Other.png"
@@ -252,25 +252,25 @@ function showMessage(result) {
   currentWeather.innerHTML = (result.data.weather[0].main);
 
   if ( currentWeather.innerHTML === "Clouds") {
-  document.getElementById("drawing").src = "img/Clouds.png";
+  document.getElementById("drawing").src = "img/Clouds.gif";
   }
   else if ( currentWeather.innerHTML === "Rain") {
-  document.getElementById("drawing").src = "img/Rain.png";
+  document.getElementById("drawing").src = "img/Rain.gif";
               }
   else if (currentWeather.innerHTML === "Thunderstorm") {
-  document.getElementById("drawing").src = "img/Thunderstorm.png";
+  document.getElementById("drawing").src = "img/Thunderstorm.gif";
               }
   else if (currentWeather.innerHTML=== "Snow") {
-  document.getElementById("drawing").src = "img/Snow.png";
+  document.getElementById("drawing").src = "img/Snow.gif";
               }
   else if (currentWeather.innerHTML === "Clear") {
-  document.getElementById("drawing").src = "img/Clear.png"
+  document.getElementById("drawing").src = "img/Clear.gif"
               }
   else if (currentWeather.innerHTML === "Drizzle") {
-  document.getElementById("drawing").src = "img/Drizzle.png"
+  document.getElementById("drawing").src = "img/Drizzle.gif"
               }
   else if (currentWeather.innerHTML === "Ash" ||currentWeather.innerHTML === "Dust" || currentWeather.innerHTML === "Fog" || currentWeather.innerHTML === "Haze" || currentWeather.innerHTML === "Mist" || currentWeather.innerHTML === "Sand" || currentWeather.innerHTML === "Smoke" ){
-  document.getElementById("drawing").src = "img/Atmosphere.png"
+  document.getElementById("drawing").src = "img/Atmosphere.gif"
               }
   else {
       document.getElementById("drawing").src = "img/Other.png"
