@@ -84,17 +84,18 @@ padding-left: -5px;
 margin-left:-30px;
 }
 
-span.col-2.celsiusfar  {
+.celsiusfars  {
 font-size: 20px;
 position: relative;
 top: -35px;
-margin-left: -10px;
-display: inline;
+margin-left: -20px;
+padding-left: -20px;
 }
 
 a.celsiusfar-a {
 font-size: 20px;
-position: relative;
+margin-left: -20px;
+padding-left: -20px;
 text-align: top;
 }
 
