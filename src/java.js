@@ -180,6 +180,7 @@ function displayDate (timestamp) {
         let month = months[date.getMonth()];
         let hour = date.getHours();
         if (hour < 10) {hour =  `0${hour}`;}
+        if (hour<=5 && hour>=21) { document.getElementById("weatherapp").style.backgroundImage = "URL(img/Night.png)"};
         let mins = date.getMinutes();
         if (mins < 10) {mins =  `0${mins}`;}
         let time = `${hour}:${mins}`;
